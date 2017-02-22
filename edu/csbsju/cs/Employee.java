@@ -20,6 +20,11 @@ public class Employee
       return name;
    }
 
+   public String toString()
+   {
+     return "Name: " + name + " Salary: " + salary + " Date of Hire: " + hireDay;
+   }
+
    public double getSalary()
    {
       return salary;
