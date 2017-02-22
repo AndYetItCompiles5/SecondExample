@@ -35,6 +35,7 @@ public class Employee
       return hireDay;
    }
 
+
    public void raiseSalary(double byDecimalValue)
    {
      if(byDecimalValue >= 0 || byDecimalValue <=1)
@@ -46,7 +47,6 @@ public class Employee
      {
        throw new IllegalArgumentException("Must be between 1 and 0");
      }
-   }
 
    private String name;
    private double salary;
