@@ -35,10 +35,17 @@ public class Employee
       return hireDay;
    }
 
-   public void raiseSalary(double byPercent)
+   public void raiseSalary(double byDecimalValue)
    {
-      double raise = salary * byPercent / 100;
-      salary += raise;
+     if(byDecimalValue >= 0 || byDecimalValue <=1)
+     {
+       double raise = salary * byDecimalValue;
+       salary += raise;
+     }
+     else
+     {
+       throw new IllegalArgumentException("Must be between 1 and 0");
+     }
    }
 
    private String name;
